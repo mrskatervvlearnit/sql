@@ -1,0 +1,5 @@
+select Imie,Nazwisko from Pracownik where IdDzial=2;
+select AVG(Pensja) from Pracownik;
+select MAX(Pensja) as 'PensjaMAX' from Pracownik;
+select Imie,Nazwisko from Klient where (YEAR(GETDATE())-YEAR(DataUrodzenia))>17;
+update Samochod set Usuniete = 1 where IdStan=3;
